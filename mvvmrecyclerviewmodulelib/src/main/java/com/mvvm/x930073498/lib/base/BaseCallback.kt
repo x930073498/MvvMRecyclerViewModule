@@ -15,16 +15,27 @@ abstract class BaseCallback : BaseObservable() {
 
     protected val mContext: Context = context!!
     private var tag: Any = mTag!!
+    private var id: Int? = null
+
+    fun getId(): Int {
+        return id!!
+    }
+
+    private fun setId(id: Int) {
+        this.id = id
+    }
 
     fun getTag(): Any {
         return tag
     }
 
     companion object {
+        private var index: Int = 0
         private var mTag: Any? = null
         private var context: Context? = null
         private val map: ArrayMap<Any, List<BaseCallback>> = ArrayMap()
         private var list: List<Any> = listOf()
+        private var tags: List<Any> = listOf()
         fun init(mContext: Context) {
             context = mContext
         }
@@ -37,8 +48,19 @@ abstract class BaseCallback : BaseObservable() {
         fun open(tag: Any) {
             mTag = tag
             list.plus(tag)
+            tags.plus(tag)
         }
 
+        fun add(vararg callback: BaseCallback) {
+        }
+
+        fun add(callback: BaseCallback) {
+
+        }
+
+        fun add(callbacks: List<BaseCallback>) {
+
+        }
 
         fun close(tag: Any) {
             list.minus(tag)
