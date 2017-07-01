@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MvvMRecyclerViewModule.iml" filepath="$PROJECT_DIR$/MvvMRecyclerViewModule.iml" />
+      <module fileurl="file://F:\Android\MvvMRecyclerViewModule\MvvMRecyclerViewModule.iml" filepath="F:\Android\MvvMRecyclerViewModule\MvvMRecyclerViewModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\Android\MvvMRecyclerViewModule\app\app.iml" filepath="F:\Android\MvvMRecyclerViewModule\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvvmrecyclerviewmodulelib/mvvmrecyclerviewmodulelib.iml" filepath="$PROJECT_DIR$/mvvmrecyclerviewmodulelib/mvvmrecyclerviewmodulelib.iml" />
+      <module fileurl="file://F:\Android\MvvMRecyclerViewModule\mvvmrecyclerviewmodulelib\mvvmrecyclerviewmodulelib.iml" filepath="F:\Android\MvvMRecyclerViewModule\mvvmrecyclerviewmodulelib\mvvmrecyclerviewmodulelib.iml" />
     </modules>
   </component>
 </project>

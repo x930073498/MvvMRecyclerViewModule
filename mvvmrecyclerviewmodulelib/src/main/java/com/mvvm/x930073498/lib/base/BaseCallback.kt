@@ -1,6 +1,9 @@
 package com.mvvm.x930073498.lib.base
 
+import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.databinding.BaseObservable
 
 import android.support.v4.util.ArrayMap
@@ -32,6 +35,7 @@ abstract class BaseCallback : BaseObservable() {
     companion object {
         private var index: Int = 0
         private var mTag: Any? = null
+        @SuppressLint("StaticFieldLeak")
         private var context: Context? = null
         private val map: ArrayMap<Any, List<BaseCallback>> = ArrayMap()
         private var list: List<Any> = listOf()
@@ -84,4 +88,6 @@ abstract class BaseCallback : BaseObservable() {
 
 }
 
-abstract class BaseData(var id: String)
+inline fun <reified T> Activity.startActivity(){
+    startActivity(Intent(this,T::class.java))
+}
